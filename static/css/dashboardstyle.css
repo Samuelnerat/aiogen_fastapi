@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo img{
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 25%;
+    margin-bottom: 30px;
+}
+.sidebar{
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    background: #091316;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(0px);
+}
+.sidebar ul{
+    width: 100%;
+    list-style: none;
+}
+.sidebar ul li{
+    display: block;
+    width: 100%;
+}
+.sidebar ul li a{
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    line-height: 45px;
+}
+.sidebar ul li:hover a  {
+    background-color:#12252b;
+    letter-spacing: 5px;
+}
+#check{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none; 
+}
+label{
+    visibility: hidden;
+}
+.text h1{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 60px;
+    padding-left: 90px;
+}
+section{
+    min-height: 100vh;
+    background: #12252b;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+.wrapper{
+    margin-left: 250px;
+}
+.images{
+    display: flex;
+    flex-flow: column;
+    
+}
+.row{
+    display: flex;
+    flex-flow: row;
+    height: 220px;
+    margin-top: 50px;
+}
+.images img{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 50px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background: #091316;
+} 
+@media (max-width:  500px)
+{
+   .sidebar{
+       transform: translateX(-250px)
+   }
+   label{
+       visibility: visible;
+   }
+   span{
+       position: absolute;
+       right: -40px;
+       top: 30px;
+       font-size: 25px;
+       border-radius: 3px;
+       color: white;
+       padding: 3px 8px;
+       cursor: pointer;
+       background: #091316;
+   }
+   #check:checked ~ .sidebar{
+       transform: translateX(0);
+   }
+   #check:checked ~ .sidebar #bars{
+       display: none;
+   }
+   #check:checked ~ section{
+       transition: scale(1.2);
+       filter:brightness(20%);
+   }
+   .wrapper{
+       margin-left: 0px;
+   }
+   .text h1{
+       color: white;
+       font-size: 15px;
+       font-weight: bold;
+       padding-top: 80px;
+       padding-left: 30px;
+   }
+   .row{
+        height: 180px;
+    }
+   .images img{
+        width: 100px;
+        height: 120px;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+}

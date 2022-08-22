@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Homepage</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='../static/css/homepagestyle.css') }}"/>
+        <link rel="stylesheet" href="{{ url_for ('static', path='../static/font-6/css/all.css') }}"/>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="container">
+                <div class="logo">
+                    <img src="../static/pictures/logo2.png" alt="LOGO">
+                    <!-- "../static/pictures/logo2.png" alt="LOGO" -->
+                    <!-- "{{ url_for ('static', path='..static/pictures/logo2.png') }}" alt="LOGO" -->
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#"class="active">About</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">English
+                            <img src="../static/pictures/caret-down-solid.svg" alt=">" width="15" height="15">
+                        </a>
+                            <ul>
+                                <li><a href="#">French</a></li>
+                                <li><a href="#">Spanish</a></li>
+                                <li><a href="#">Arabic</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/login" target="_blank"><button class="btn">Sign In</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class ="banner-area">
+            <div class="holder">
+                <div class="logo2">
+                    <a href="#"><img src="../static/pictures/logo.png" alt="LOGO"></a>
+                    <!-- {{url_for('home')}} -->
+                </div>
+                <div class="section">
+                    <h1>all in one generator</h1>
+                    <p >easily log into multiple accounts</p>
+                </div>
+            </div>
+            <div>
+                <a href="/signup" target="_blank"><button class="button">Sign Up</button></a>
+            </div>
+            <div>
+                <a href="/login" target="_blank"><button class="button1">Sign In</button></a>
+            </div>
+        </div>
+        <div class="hold">
+            <div class="row1" >
+                <div class="section2">
+                    <h2> Create multiple accounts very easily with one click </h2>
+                    <p>
+                        Lorsum dolor sit, amet consectetur adipiscing elit.em ip Iusto deserunt
+                        laboriosam saepe inventore nesciunt. Corrupti blanditis, excepturi
+                        rerum doloribus ratione quas molestiae ipsum fugiat assumenda
+                        necessitatibus incidunt, fugit sunt?
+                    </p>
+                </div>
+                <div class="pic">
+                    <img src="../static/pictures/accounts.png" alt="LOGO">
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="special">
+                <div class="part">
+                    <h3> Easy to Use </h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipiscing elit.
+                        Eos porro commodi nobis qui duci facilis voluptatum
+                         quia placeat.</p>
+                </div>
+                <div class="part">
+                    <h3> Save Time </h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipiscing elit.
+                        Eos porro commodi nobis qui duci facilis voluptatum
+                         quia placeat.
+                    </p>
+                </div>
+                <div class="part">
+                    <h3> Reliable </h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipiscing elit.
+                        Eos porro commodi nobis qui duci facilis voluptatum
+                         quia placeat.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="paragraph">
+                <h4> Our Custom Plans </h4>
+                <p>
+                    We have taken time to create plans that
+                     have been tailor made just for you
+                </p>
+            </div>
+            <div class="part2">
+                <div class="pass">
+                <h5> Free </h5>
+                <input type="email"name=""placeholder="$0">
+                <ul>
+                    <li> Google Ads </li>
+                    <li> Social Media </li>
+                    <li> Email Marketing </li>
+                    <li> 24/7 Customer Care Service </li>
+                </ul>
+                <button class="butn">SUBSCRIBE</button>
+                </div>
+                <div class="pass1">
+                <h5> Standard</h5>
+                <input type="email"name=""placeholder="$100/Month">
+                <ul>
+                    <li> Google Ads </li>
+                    <li> Social Media </li>
+                    <li> Email Marketing </li>
+                    <li> 24/7 Customer Care Service </li>
+                </ul>
+                <button class="butn">SUBSCRIBE</button>
+                </div>
+                <div class="pass">
+                <h5> Premium</h5>
+                <input type="email"name=""placeholder="$200/Month">
+                <ul>
+                    <li> Google Ads </li>
+                    <li> Social Media </li>
+                    <li> Email Marketing </li>
+                    <li> 24/7 Customer Care Service </li>
+                </ul>
+                <button class="butn">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="contain1">
+                <h6> Contact Us </h6>
+                <h7> Lorem ipsum dolor sit amet consectetur <br>adipiscing elit</h7><br><br>
+                <div class="contain2">
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipiscing elit. Iusto deserunt
+                        laboriosam saepe inventore nesciunt. Corrupti blanditis, excepturi
+                        recus rerum doloribus ratione quas molestiae ipsum fugiat assumenda
+                        necessitatibus incidunt, fugit sunt?<br><br>
+                        Lorem ipsum dolor sit, amet consectetur adipiscing elit. Iusto deserunt
+                        laboriosam saepe inventore nesciunt.
+                    </p>
+                    <div class="form">
+                        <div class="form1">
+                        <input type="name" name="" placeholder="First name">
+                        <input type="name" name="" placeholder="Last name">
+                        <input type="email" name="" placeholder="Email">
+                        <input type="number" name="" placeholder="Phone Number">
+                        </div>
+                        <input type="name" name="" placeholder="Subject">
+                        <input type="name" name="" placeholder="Message">
+                    </div>
+                </div>
+                <button class="butn">Send</button>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="bottom">
+                <div class="row">
+                    <div class="footer-col">
+                        <div class="logoo">
+                            <img src="../static/pictures/logo2.png" alt="LOGO">
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipiscing elit. Iusto deserunt
+                            laboriosam saepe inventore nesciunt. Corrupti blanditis, excepturi
+                            recusandae rerum doloribus ratione quas molestiae ipsum fugiat assumenda
+                            necessitatibus incidunt, fugit sunt?
+                        </p>
+                    </div>
+                    <div class="footer-col">
+                        <h3> Company</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="#">Address:Lorem ipsum dolor sit amet consecteur adipiscing elit.
+                                Ab inventore numquam blanditis labore.
+                            </a></li>
+                            <li><a href="#">Phone: +123456789</a></li>
+                            <li><a href="#">Tel: +123456789</a></li>
+                            <li><a href="#">Email: sample@domain.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

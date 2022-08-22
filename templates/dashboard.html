@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>dashboard</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='../static/css/dashboardstyle.css') }}" />
+        <!-- "{{ url_for('static', path='../static/css/homepagestyle.css') }}"     "dashboardstyle.css" -->
+        <link rel="stylesheet" href="{{ url_for ('static', path='../static/font-6/css/all.css') }}"/>
+    </head>
+    <body>
+        <div class="general">
+            <input type="checkbox" name="" id="check">
+            <div class="sidebar">
+                <label for="check" class="checkbtn">
+                    <span class="fas fa-times" id="times"></span>
+                    <span class="fas fa-bars" id="bars"></span>
+                </label>
+                <div class="logo">
+                    <a href="/"><img src="../static/pictures/logo2.png" alt="LOGO"></a>
+                </div>
+                <ul>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/task">Task</a></li>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="/settings">Settings</a></li>
+                    <li><a href="logout">Logout</a></li>
+                </ul>
+            </div>
+            <section class="wrapper">
+                <div class="text">
+                    <h1>Select the account you want to create here</h1>
+                </div>
+                <div class="images">
+                    <div class="row">
+                        <div class="img 0">
+                            <img src="../static/pictures/gmail.png" alt="gmail">
+                        </div>
+                        <div class="img 1">
+                            <img src="../static/pictures/outlook.png" alt="outlook">
+                        </div>
+                        <div class="img 2">
+                            <img src="../static/pictures/yahoo.png" alt="yahoo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="img 3">
+                            <img src="../static/pictures/addidas.png" alt="addidas">
+                        </div>
+                        <div class="img 4">
+                            <img src="../static/pictures/download.png" alt="nike">
+                        </div>
+                        <div class="img 5">
+                            <img src="../static/pictures/amazon.png" alt="amazon">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

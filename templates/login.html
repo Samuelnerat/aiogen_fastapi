@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Sign In page</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='../static/css/loginstyle.css') }}"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="../static/pictures/logo2.png" alt="LOGO"></a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">English 
+                        <img src="../static/pictures/caret-down-solid.svg" alt=">" width="15" height="15">
+                    </a>
+                        <ul>
+                            <li><a href="#">French</a></li>
+                            <li><a href="#">Spanish</a></li>
+                            <li><a href="#">Arabic</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/signup" target="_blank"><button class="btn">Sign Up</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="segment">
+            <div class="wrapper">
+                <div class="holder">
+                    <div class="logo2">
+                        <img src="../static/pictures/logo.png" alt="LOGO">
+                    </div>
+                    <div class="section">
+                        <h1>all in one generator</h1>
+                        <p >easily log into multiple accounts</p>
+                    </div>
+                </div> 
+                <div class="text">
+                    <h2>LOGIN</h2>
+                    <!-- {% if message %}
+                        <div class="alert alert-success" role="alert">
+                            {{ message }}
+                        </div>
+                    {% endif %}
+                    {% if error  %}
+                        <div class="alert alert-danger" role="alert">
+                            {{ error }}
+                        </div>
+                    {% endif %}  -->
+                    <form action="/login" method="POST">
+                        <div class="form">
+                            <p>Email</p>
+                            <input type="email"name="email"placeholder="Email">
+                            <p>Password</p>
+                            <input type="password"name="password"placeholder="Password"><br>
+                            <a href="#"><strong class="n1">Forgot Password?</strong></a>
+                        </div>
+                        <div>
+                            {% if error %}
+                            <center>
+                                <small style ="color : red">
+                                    {{error}}
+                                </small>
+                            </center>
+                            {% endif %}
+                        </div>
+                        <a href="#" target="_blank"><button class="button">Sign In</button></a>
+                    </form> 
+                    <p class="note"> Don't Have An Account?
+                    <a href="/signup"><strong class="n2">Sign Up</strong></a></p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="bottom">
+                <div class="row">
+                    <div class="footer-col">
+                        <div class="logo">
+                            <img src="../static/pictures/logo2.png" alt="LOGO">
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipiscing elit. Iusto deserunt
+                            laboriosam saepe inventore nesciunt. Corrupti blanditis, excepturi 
+                            recusandae rerum doloribus ratione quas molestiae ipsum fugiat assumenda
+                            necessitatibus incidunt, fugit sunt?
+                        </p>
+                    </div>
+                    <div class="footer-col">
+                        <h3> Company</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="#">Address:Lorem ipsum dolor sit amet consecteur adipiscing elit.
+                                Ab inventore numquam blanditis labore.
+                            </a></li>
+                            <li><a href="#">Phone: +123456789</a></li>
+                            <li><a href="#">Tel: +123456789</a></li>
+                            <li><a href="#">Email: sample@domain.com</a></li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

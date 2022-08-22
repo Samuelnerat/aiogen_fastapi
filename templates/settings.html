@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Settings</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='../static/css/settingstyle.css') }}" />
+        <link rel="stylesheet" href="{{ url_for ('static', path='../static/font-6/css/all.css') }}"/>
+    </head>
+    <body>
+        <div class="general">
+            <input type="checkbox" name="" id="check">
+            <div class="sidebar">
+                <label for="check" class="checkbtn">
+                    <span class="fas fa-times" id="times"></span>
+                    <span class="fas fa-bars" id="bars"></span>
+                </label>
+                <div class="logo">
+                    <a href="/"><img src="../static/pictures/logo2.png" alt="LOGO"></a>
+                </div>
+                <ul>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/task">Task</a></li>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="/settings">Settings</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+            <section class="wrapper">
+                <div class="text">
+                    <h1>Settings </h1> 
+                    <form>
+                        <div class="form">
+                            <p>Discord webhook URL</p>
+                            <input type="name"name=""placeholder="">
+                            <p>Discord webhook Username</p>
+                            <input type="email"name=""placeholder="">
+                            <p>SMS-Active.ru API Key</p>
+                            <input type="name"name=""placeholder="">
+                            <div class="special">
+                                <p>Proxies</p>
+                                <input type="name"name=""placeholder=""> 
+                            </div>
+                            <button class="button">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

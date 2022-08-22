@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 110px;
+    padding: 10px 15px;
+    position: relative;
+    box-shadow:0px 0px 10px black;
+}
+nav .logo{
+    float: left;
+}
+nav .logo img{
+    width: 100px;
+}
+.navbar ul{
+    float: right;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0px 25px;
+}
+.navbar ul li a:hover{
+    color: gray;
+}
+.navbar ul li ul{
+    display: none;
+    position: absolute;
+    background-color:#12252b;
+    box-shadow:0px 0px 10px black;
+    border-radius: 6px 6px 6px 6px;
+    width: 120px;
+    line-height: 35px;
+}
+.navbar ul .active{
+    color: blueviolet;
+}
+.navbar ul li:hover ul{
+    display: block;
+}
+.navbar ul li ul li a:hover{
+    color: gray;
+}
+.checkbtn{
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    display: none;
+    margin-top: 30px;
+}
+#check{
+    display: none;
+}.btn{
+    background-color:rgb(58, 156, 58);
+    height:40px;
+    width:80px;
+    border-radius: 5px;
+    color: white;
+}
+.logo2 img{
+    width: 260px;
+    padding-top: 120px;
+    margin-left:550px;
+}
+.banner-area{
+	width: 100%;
+	height: 100vh;
+	background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../pictures/simp.jpg);
+	background-size: cover;
+	background-position:center;
+	overflow: hidden;
+}
+.section h1{
+	position: absolute;
+	top: 65%;
+	left: 18%;
+	font-size: 4rem;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: #fff;
+}
+.section p{
+    color:white;
+    position:absolute;
+    top: 75%;
+    left: 28%;
+    font-size:1.8rem;
+    text-transform:uppercase;
+}
+.button{
+    background-color:rgb(58, 156, 58);
+    height:55px;
+    width:170px;
+    border-radius: 5px;
+    color: white;
+    position:absolute;
+    top:85%;
+    left:38%;
+}
+.button1{
+    background-color:transparent;
+    height:55px;
+    width:170px;
+    border-radius: 5px;
+    color: green;
+    position:absolute;
+    top:85%;
+    left:53%;
+}
+.hold{
+    max-width: 1140px;
+    margin: auto;
+}
+.row1{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.pic img{
+    width: 570px;
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:50px;
+}
+.section2{
+    padding-top:150px;
+    max-width:500px;
+    line-height:25px;
+
+}
+.col{
+    color:white;
+    background-color: #12252b;
+    padding: 45px 0px;
+}
+.special{
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1070px;
+    margin: auto;
+}
+.part{
+    /* width: 45%; */
+    margin: 0 60px;
+}
+.part h3{
+    font-size:20px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-left:50px;
+}
+.part p{
+    line-height:20px;
+    max-width:250px;
+}
+.paragraph h4{
+    font-size:30px;
+    text-transform: capitalize;
+    margin:20px 500px;
+}
+.paragraph p{
+    margin:0px 500px;
+}
+.part2{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+    margin:50px 70px
+}
+.part2 ul{
+    list-style:none;
+}
+.pass{
+    width:325px;
+    height:520px;
+    border:1px solid black;
+    padding:20px 50px;
+    line-height:48px;
+    font-size:18px;
+    margin-top:50px;
+}
+.pass1{
+    width:325px;
+    height:520px;
+    border:1px solid black;
+    background-color: #12252b;
+    color:white;
+    padding:20px 50px;
+    line-height:48px;
+    font-size:18px;
+}
+.part2 h5{
+    font-size:25px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-left:50px;
+    margin-top:30px;
+}
+.part2 input{
+    width:120px;
+    height:40px;
+    margin-left:40px;
+    padding-left:20px;
+    margin-bottom:30px;
+}
+.pass1 button{
+    background-color:white;
+    height:55px;
+    width:170px;
+    border-radius: 5px;
+    color: black;
+    position:absolute;
+    margin-top:30px;
+    margin-left:20px;
+}
+.pass button{
+    background-color:green;
+    height:55px;
+    width:170px;
+    border-radius: 5px;
+    color: white;
+    position:absolute;
+    margin-top:30px;
+    margin-left:20px;
+}
+.contain{
+    color:white;
+    background-color: #12252b;
+    padding-left:30px;
+    padding-bottom:30px;
+    height:500px;
+}
+.contain h6{
+    font-size:28px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-left:580px;
+    padding-top:30px;
+
+}
+.contain h7{
+    font-size:25px;
+    padding-bottom:20px;
+}
+.contain2{
+    display:flex;
+    /* flex-wrap:wrap; */
+}
+.contain2 p{
+    max-width:500px;
+}
+.form input{
+    color:white;
+    background-color:transparent;
+    border:1px solid white;
+    height:40px;
+    width:270px;
+    border-radius:10px;
+    margin:20px 10px;
+}
+.butn{
+    background-color:white;
+    height:50px;
+    width:120px;
+    border-radius: 5px;
+    margin-left: 510px;
+    margin-bottom: 20px;
+}
+
+.bottom{
+    max-width: 1170px;
+    margin: auto;
+    color:white
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.logoo img{
+    width: 100px;
+}
+.footer{
+    background-color: #12252b;
+    padding: 50px 0;
+    margin-top:50px;
+}
+.footer-col{
+    width: 30%;
+    padding:0 15px;
+}
+.footer-col h3{
+    font-size:20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col ul li{
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:white;
+    text-decoration: none;
+    font-weight: 300;
+    display:block;
+}
+@media screen and (max-width: 990px)
+{
+    .logo2 img{
+        margin-left:360px;
+    }
+    .section h1{
+        font-size: 50px;
+    }
+    .section p{
+        font-size: 1.5rem;
+    }
+    .button{
+        left:30%;
+    }
+    .button1{
+        left:54%;
+    }
+    .pic img{
+        width: 450px;
+    }
+    .section2{
+        padding-top:85px;
+    }
+    .part h3{
+        font-size: 18px;
+    }
+    .paragraph h4{
+        font-size: 25px;
+        margin:20px 300px;
+    }
+    .paragraph p{
+        margin:0px 300px;
+    }
+    .form input{
+        height:20px;
+        margin:12px 10px;
+    }
+}
+@media screen and (max-width:  947px){
+    nav{
+        padding: 0px 50px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .navbar ul{
+        width: 100%;
+        height: 100vh;
+        background: #12252b;
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        text-align: center;
+        transition: 0.4s ease;
+    }
+    .navbar ul li{
+        display: block;
+        margin: 60px 0px;
+        line-height: 20px;
+    }
+    .navbar ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.hover{
+        background: none;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+@media screen and (max-width: 772px)
+{
+    .logo2 img{
+        margin-left:250px;
+        width: 220px;
+        padding-top: 150px;
+
+    } 
+    .section h1{
+        font-size: 31px;
+        top: 67%;
+        left: 20%;
+    }
+    .section p{
+        font-size: 1.1rem;
+        top: 73%;
+        left: 23%;
+    }
+    .button{
+        left:21%;
+    }
+    .button1{
+        left:57%;
+    }
+    .pic img{
+       width: 400px; 
+    }
+    .row1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section2{
+        padding-top:50px;
+        line-height:18px;
+    }
+    .part{
+        margin: 0 45px;
+    }
+    .part h3{
+        font-size: 17px;
+        margin-left:0px;
+    }
+    .part p{
+        line-height: 15px;
+    }
+    .paragraph h4{
+        font-size:20px;
+        margin:15px 160px;
+    }
+    .paragraph p{
+        margin:0px 170px;
+    }
+    .part2{
+        display:flex;
+        flex-wrap:wrap;
+        margin:15px 0px;
+    }
+    .pass1{
+        margin-top: 50px;
+    }
+    .contain{
+        padding-left:20px;
+        height:580px;
+    }
+    .contain h6{
+        margin-bottom: 0px;
+        margin-left:200px; 
+    }
+    .contain h7{
+        font-size:20px;
+    }
+    .contain2{ 
+        display: block;
+    }
+    .contain2 p{
+        max-width:600px;
+    }
+    .form input{
+        height:23px;
+        width:300px;
+    }
+    .butn{
+        height:50px;
+        width:100px;
+        margin-left: 330px;
+    }
+}
+@media screen and (max-width: 496px)
+{
+    .logo2 img{
+        margin-left:100px;
+        width: 190px;
+        padding-top: 150px;        
+    }
+    .section h1{
+        font-size: 20px;
+        top: 64%;
+        left: 18%;
+    }
+    .section p{
+        font-size: 0.7rem;
+        top: 69%;
+        left: 22%;
+    }
+    .button{
+        left:13%;
+        height:50px;
+        width:130px;
+        top:77%;    
+    }
+    .button1{
+        left:53%;
+        height:50px;
+        width:130px;
+        top:77%;
+    }  
+    .pic img{
+        width: 310px; 
+    } 
+    .part{
+        margin: 0 23px;
+    }
+    .part p{
+        line-height: 14px;
+    } 
+    .paragraph h4{
+        font-size:17px;
+        margin:15px 100px;
+    }
+    .paragraph p{
+        margin:0px 100px;
+    }
+    .contain{
+        height:710px;
+    }
+    .contain h6{
+        margin-left:110px; 
+    }
+    .contain h7{
+        font-size:25px;
+    }
+    .form input{
+        height:30px;
+    }
+    .butn{
+        margin-left: 200px;
+    }
+}
