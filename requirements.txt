@@ -28,7 +28,7 @@ python-dotenv==0.20.0
 python-multipart==0.0.5
 six==1.16.0
 sniffio==1.2.0
-SQLAlchemy==1.4.39
+SQLAlchemy
 starlette==0.19.1
 typing_extensions==4.3.0
 uvicorn==0.18.2
